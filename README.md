@@ -27,37 +27,3 @@ Add it to your Jest config:
 ```
 
 Please refer to the [Jest snapshotSerializers config docs](https://jestjs.io/docs/configuration#snapshotserializers-arraystring) for additional info.
-
-## Example
-
-### Given:
-```js
-function renderElem(props) {
-	return `<body>
-				<div class="home active">
-					<h1><img src="${ props.img }" alt="Foo"/></h1><div>Hello</div>
-					<p><span class="something">Hey</span>
-					<img src="${ props.img }" /></p>
-				</div>
-			</body>
-	`;
-}
-
-expect(renderElem({ img: '/foo.png' })).toMatchSnapshot();
-```
-
-### Produces snapshot:
-```html
-<body>
-  <div class="home active">
-    <h1>
-      <img src="/foo.png" alt="Foo" />
-    </h1>
-    <div>Hello</div>
-    <p>
-      <span class="something">Hey</span>
-      <img src="/foo.png" />
-    </p>
-  </div>
-</body>
-```
