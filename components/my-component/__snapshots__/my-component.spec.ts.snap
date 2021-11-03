@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`my-component renders with 1 attribute 1`] = `
+<my-component id="foo">
+  <mock:shadow-root>
+    <div>
+      Hello, World! I'm
+    </div>
+  </mock:shadow-root>
+</my-component>
+`;
+
+exports[`my-component renders with 2 attributes 1`] = `
+<my-component
+  class="bar"
+  id="foo"
+>
+  <mock:shadow-root>
+    <div>
+      Hello, World! I'm
+    </div>
+  </mock:shadow-root>
+</my-component>
+`;
+
+exports[`my-component renders with multiple attributes 1`] = `
+<my-component
+  data-attr="bar"
+  first="First"
+  id="foo"
+  last="Last"
+  middle="Middle"
+>
+  <mock:shadow-root>
+    <div>
+      Hello, World! I'm First Middle Last
+    </div>
+  </mock:shadow-root>
+</my-component>
+`;
+
+exports[`my-component renders with no attributes 1`] = `
+<my-component>
+  <mock:shadow-root>
+    <div>
+      Hello, World! I'm
+    </div>
+  </mock:shadow-root>
+</my-component>
+`;

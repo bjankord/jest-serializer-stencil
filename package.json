@@ -4,7 +4,11 @@
   "description": "A Jest snapshot serializer for Stencil components",
   "main": "dist/cjs/index.js",
   "scripts": {
-    "build": "cp src/index.js dist/cjs/index.js"
+    "build": "cp src/index.js dist/cjs/index.js",
+    "test": "stencil test --spec",
+    "release:major": "npm test && npm run build && npm version major -m \"Released version %s\" && npm publish && git push --follow-tags",
+    "release:minor": "npm test && npm run build && npm version minor -m \"Released version %s\" && npm publish && git push --follow-tags",
+    "release:patch": "npm test && npm run build && npm version patch -m \"Released version %s\" && npm publish && git push --follow-tags"
   },
   "repository": {
     "type": "git",
@@ -16,13 +20,19 @@
     "SnapshotSerializer",
     "Serializer"
   ],
-  "author": "",
+  "author": "Brett Jankord",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/bjankord/jest-serializer-stencil/issues"
   },
   "homepage": "https://github.com/bjankord/jest-serializer-stencil#readme",
   "dependencies": {
-    "@stencil/core": "^2.8.1"
+    "@stencil/core": "^2.7.0",
+    "diffable-html": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.24",
+    "jest": "^26.6.3",
+    "jest-cli": "^26.6.3"
   }
 }
