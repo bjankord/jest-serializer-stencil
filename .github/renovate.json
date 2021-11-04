@@ -1,0 +1,8 @@
+{
+  "packageRules": [
+    {
+      "matchPackageNames": ["@types/jest", "jest", "jest-cli"],
+      "allowedVersions": "<=27"
+    }
+  ]
+}
