@@ -2,7 +2,7 @@
   "packageRules": [
     {
       "matchPackageNames": ["@types/jest", "jest", "jest-cli"],
-      "allowedVersions": "<=27"
+      "allowedVersions": "<=26"
     }
   ]
 }
