@@ -4,7 +4,7 @@
   "description": "A Jest snapshot serializer for Stencil components",
   "main": "dist/cjs/index.js",
   "scripts": {
-    "build": "cp src/index.js dist/cjs/index.js",
+    "build": "npx shx cp  src/index.js dist/cjs/index.js",
     "test": "stencil test --spec",
     "release:major": "npm test && npm run build && npm version major -m \"Released version %s\" && npm publish && git push --follow-tags",
     "release:minor": "npm test && npm run build && npm version minor -m \"Released version %s\" && npm publish && git push --follow-tags",
