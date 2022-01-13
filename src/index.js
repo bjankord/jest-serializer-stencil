@@ -17,7 +17,6 @@ const test = (val) => {
     }
 
     if (typeof val === 'string') {
-      console.log('val is a string');
       const trimmed = val.trim();
       return (
         trimmed.length > 2 &&
