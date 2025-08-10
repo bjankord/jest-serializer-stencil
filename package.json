@@ -28,7 +28,7 @@
   "homepage": "https://github.com/bjankord/jest-serializer-stencil#readme",
   "dependencies": {
     "@stencil/core": "^2.7.0",
-    "diffable-html": "^5.0.0"
+    "diffable-html": "^6.0.0"
   },
   "devDependencies": {
     "@types/jest": "26.0.24",
